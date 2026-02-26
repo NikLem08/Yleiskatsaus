@@ -1,10 +1,16 @@
 import * as React from "react";
-import Tervehdys from "./ekatehtävä";
+import OpiskelijaTiedot from "./opiskelijatiedot.jsx";
+
+const opiskelija = {
+  nimi: "Matti Meikäläinen",
+  ika: 16,
+  kurssi: "Reactin perusteet",
+};
 
 function App() {
   return (
     <div>
-      <Tervehdys nimi="Niko" />
+      <OpiskelijaTiedot opiskelija={opiskelija} />
     </div>
   );
 }
