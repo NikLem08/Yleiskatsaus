@@ -1,14 +1,13 @@
 import "./App.css";
-import Infolista from "./Infolista";
+import Linkkilista from "./Linkkilista";
 
 function App() {
-  const tiedot = ["React", "Javascript", "CSS"];
-  return (
-    <div>
-      <h1>Infolista</h1>
-      <Infolista taulukko={tiedot} />
-    </div>
-  );
+  const linkit = [
+    { id: 1, nimi: "Google", url: "https://google.com" },
+    { id: 2, nimi: "React", url: "https://react.dev" },
+  ];
+
+  return <Linkkilista lista={linkit} />;
 }
 
 export default App;
