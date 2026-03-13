@@ -1,13 +1,16 @@
 import "./App.css";
-import Linkkilista from "./Linkkilista";
+import Kayttajakortti from "./Kayttajakortti";
 
 function App() {
-  const linkit = [
-    { id: 1, nimi: "Google", url: "https://google.com" },
-    { id: 2, nimi: "React", url: "https://react.dev" },
-  ];
+  const nimi = "Niko";
 
-  return <Linkkilista lista={linkit} />;
+  const kurssit = ["React", "Javascript"];
+  return (
+    <div>
+      <h1>Käyttäjäkortti</h1>
+      <Kayttajakortti nimi={nimi} lista={kurssit} />
+    </div>
+  );
 }
 
 export default App;
